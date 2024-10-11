@@ -1,0 +1,31 @@
+# Maintainer: walker84837 <walker84837@gmail.com>
+
+pkgname=hocr2pdf
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Convert HOCR files to PDF"
+arch=('x86_64')
+url="https://github.com/walker84837/hocr2pdf"
+license=('BSD-3-Clause')
+depends=()
+makedepends=('go' 'git')
+provides=("$pkgname")
+conflicts=()
+source=("$pkgname::git+$url.git")
+sha256sums=('SKIP')  # Skipping checksum verification for VCS sources
+
+build() {
+  cd "$srcdir/$pkgname"
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+
+  make
+}
+
+package() {
+  cd "$srcdir/$pkgname"
+  install -Dm755 "hocr2pdf" "$pkgdir/usr/bin/hocr2pdf"
+  install -Dm644 LICENSE.md "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
