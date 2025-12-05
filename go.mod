@@ -1,4 +1,4 @@
-module github.com/walker84837/hocr2pdf
+module hocr2pdf
 
 go 1.22.2
 
