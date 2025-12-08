@@ -10,7 +10,7 @@ To get started with `hocr2pdf`, you'll need to have Go installed on your machine
 
 1. **Clone the repository**:
    ``` console
-   $ git clone https://winlogon.ddns.net/winlogon/hocr2pdf.git
+   $ git clone https://github.com/walker84837/hocr2pdf.git
    $ cd hocr2pdf/
    ```
 
@@ -34,7 +34,7 @@ No additional initial configuration is required beyond the standard Go setup and
 
 To contribute to `hocr2pdf`, clone the repository:
 ``` console
-$ git clone https://winlogon.ddns.net/winlogon/hocr2pdf.git
+$ git clone https://github.com/walker84837/hocr2pdf.git
 $ cd hocr2pdf/
 ```
 
@@ -75,8 +75,8 @@ We welcome contributions to improve hocr2pdf. Please fork the repository, make y
 
 ## Links
 
-- Repository: [https://winlogon.ddns.net/winlogon/hocr2pdf/](https://winlogon.ddns.net/winlogon/hocr2pdf/)
-- Issue tracker: [https://winlogon.ddns.net/winlogon/hocr2pdf/issues](https://winlogon.ddns.net/winlogon/hocr2pdf/issues)
+- Repository: <https://github.com/walker84837/hocr2pdf/>
+- Issue tracker: <https://github.com/walker84837/hocr2pdf/issues>
   - For sensitive bugs or security vulnerabilities, please contact me at `@winlogon.exe:matrix.org` directly.
 
 ## Licensing
